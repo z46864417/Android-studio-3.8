@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">3.15</string>
+    <string name="username">使用者姓名:</string>
+    <string name="input_text"></string>
+    <string name="button">送出</string>
+    <string name="output_text"></string>
+</resources>

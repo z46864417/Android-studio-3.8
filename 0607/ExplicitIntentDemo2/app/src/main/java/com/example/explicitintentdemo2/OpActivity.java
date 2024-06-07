@@ -26,8 +26,8 @@ public class OpActivity extends AppCompatActivity {
                 RadioButton rdbAdd,rdbSubtract,rdbMultiply,rdbDivide;
                 Bundle bundle = OpActivity.this.getIntent().getExtras();
                 if(bundle == null) return;
-                opd1 = Integer.parseInt(bundle.getString("OPERAN01"));
-                opd2 = Integer.parseInt(bundle.getString("OPERAN02"));
+                opd1 = Integer.parseInt(bundle.getString("OPERAND01"));
+                opd2 = Integer.parseInt(bundle.getString("OPERAND02"));
                 rdbAdd = (RadioButton) findViewById(R.id.rdbAdd);
                 if(rdbAdd.isChecked()){
                     result = opd1+opd2;
@@ -50,7 +50,7 @@ public class OpActivity extends AppCompatActivity {
                 }
                 Intent rIntent = new Intent();
                 Bundle rbundle = new Bundle();
-                rIntent.putExtra(rbundle);
+                rIntent.putExtras(rbundle);
                 rbundle.putDouble("RESULT",result);
                 setResult(RESULT_OK,rIntent);
                 finish();
